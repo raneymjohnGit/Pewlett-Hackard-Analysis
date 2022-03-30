@@ -7,6 +7,12 @@ SELECT 	*
 SELECT 	*  
   FROM titles;
 
+SELECT 	*  
+  FROM dept_manager where to_date = '9999-01-01';
+  
+SELECT 	*  
+  FROM salaries;
+
 ---- **** DELIVERABEL 1 **** ----  
 --drop the table if already exists.
 DROP TABLE retirement_titles;
@@ -88,3 +94,38 @@ SELECT  DISTINCT ON(a.emp_no)
    AND	a.birth_date BETWEEN '1965-01-01' AND '1965-12-31'
  ORDER BY a.emp_no;
  
+ 
+ -- Following SQL will give information about managers who are going to retire and their department
+ SELECT	a.emp_no,
+		a.first_name,
+		a.last_name,		
+		a.title,
+		b.dept_no,		
+		c.dept_name
+  FROM	unique_titles a
+  JOIN	dept_manager b
+  	ON	a.emp_no = b.emp_no
+  JOIN	departments c
+  	ON	b.dept_no = c.dept_no
+ WHERE b.to_date = '9999-01-01'
+ ORDER BY a.emp_no;
+ 
+  
+-- Following SQL will give information top 10 highest paid employees 
+SELECT	a.emp_no,
+	    a.first_name,
+		a.last_name,
+		b.from_date,
+		b.to_date,
+		c.title,
+		d.salary
+ FROM	employees a
+ JOIN	dept_emp b
+   ON	a.emp_no = b.emp_no
+ JOIN	titles c
+   ON	b.emp_no = c.emp_no
+ JOIN 	salaries d
+   ON	a.emp_no = d.emp_no
+WHERE	b.to_date = '9999-01-01'
+  AND	c.to_date = '9999-01-01'   
+ORDER BY d.salary DESC LIMIT 10; 
