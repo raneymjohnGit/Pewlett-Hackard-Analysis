@@ -76,7 +76,10 @@ Follow the instructions below to complete Deliverable 2.
 Additional Queries:
 
 1.  Retiring Managers
+        
     -- Following SQL will give information about managers who are going to retire and their department
+
+    
      SELECT	a.emp_no,
 		    a.first_name,
 		    a.last_name,		
@@ -93,7 +96,10 @@ Additional Queries:
 
 
 2.  Top 10 hignest paid employees
+
 -- Following SQL will give information top 10 highest paid employees 
+
+
     SELECT	a.emp_no,
             a.first_name,
             a.last_name,
