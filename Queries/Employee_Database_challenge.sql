@@ -102,6 +102,7 @@ SELECT  DISTINCT ON(a.emp_no)
 		a.title,
 		b.dept_no,		
 		c.dept_name
+  INTO  retiring_managers
   FROM	unique_titles a
   JOIN	dept_manager b
   	ON	a.emp_no = b.emp_no
@@ -119,6 +120,7 @@ SELECT	a.emp_no,
 		b.to_date,
 		c.title,
 		d.salary
+ INTO	highpaidemployees
  FROM	employees a
  JOIN	dept_emp b
    ON	a.emp_no = b.emp_no
