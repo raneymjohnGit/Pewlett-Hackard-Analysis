@@ -57,16 +57,16 @@ Follow the instructions below to complete Deliverable 2.
 ## Pewlett-Hackard-Analysis Results
 
 - Image of retirement_titles
-    ![image_name](https://github.com/raneymjohnGit/World_Weather_Analysis/blob/main/Weather_Database/city_dataframe.png)
+    ![image_name](https://github.com/raneymjohnGit/Pewlett-Hackard-Analysis/blob/main/Resources/retirement_titles.png)
 
 - Image of unique_titles
-    ![image_name](https://github.com/raneymjohnGit/World_Weather_Analysis/blob/main/Vacation_Search/WeatherPy_vacation_map.png)
+    ![image_name](https://github.com/raneymjohnGit/Pewlett-Hackard-Analysis/blob/main/Resources/unique_titles.png)
 
 - Image of retiring_titles
-    ![image_name](https://github.com/raneymjohnGit/World_Weather_Analysis/blob/main/Vacation_Itinerary/WeatherPy_travel_map.png)
+    ![image_name](https://github.com/raneymjohnGit/Pewlett-Hackard-Analysis/blob/main/Resources/retiring_titles.png)
  
 - Image of mentorship_eligibilty
-    ![image_name](https://github.com/raneymjohnGit/World_Weather_Analysis/blob/main/Vacation_Itinerary/WeatherPy_travel_map_markers.png)
+    ![image_name](https://github.com/raneymjohnGit/Pewlett-Hackard-Analysis/blob/main/Resources/mentorship_eligibilty.png)
 
 ## Pewlett-Hackard-Analysis Summary
 
